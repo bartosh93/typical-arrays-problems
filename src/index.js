@@ -7,12 +7,12 @@ exports.min = function min (array) {
   }  
   else {
     maxi = array[0];  
-    for(i=0; i < array.length -1; i++){
-        if (maxi < array[i+1] ) {
+    for(i=1; i < array.length ; i++){
+        if (maxi < array[i] ) {
           maxi = maxi;
         }
         else {
-            maxi = array[i+1];
+            maxi = array[i];
         }
         
         }  
@@ -29,12 +29,12 @@ exports.max = function max (array) {
   }  
   else {
     maxi = array[0];  
-    for(i=0; i < array.length -1; i++){
-        if (maxi > array[i+1] ) {
+    for(i=1; i < array.length ; i++){
+        if (maxi > array[i] ) {
           maxi = maxi;
         }
         else {
-            maxi = array[i+1];
+            maxi = array[i];
         }
         
         }  
